@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>versus</title>
+</head>
+<body>
+    <div class="fone1">
+        <header class="header">
+            <a href=""><p class="header-logo">VERSUS</p></a>
+            <nav class="header-nav">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="https://kwork.ru/frontend/19620723/verstka-sayta" target="_blank" class="nav-link">Checkout</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <script>
+                    if (window.jQuery) {
+                        console.log("profit")
+                    } else {
+                        console.log("error")
+                    }
+                    $(function(){
+                    $('a[href^="#"]').click(function(){
+                    var target = $(this).attr('href');
+                    $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
+                    return false;
+                    });
+                });
+                </script>
+            </nav>
+        </header>
+        <div class="build-beautiful">
+            <p class="build-beautiful-title" data-aos="fade-right" data-aos-duration="2000">We build beautiful web and programs.</p>
+            <a href="" class="build-beautiful-btn" data-aos="fade-down" data-aos-duration="2000">Buy a service</a>
+        </div>
+    </div>
+    <div class="content-block" id="portfolio">
+        <p class="work-title">Latest work</p>
+        <div class="content-block-intro">
+            <img src="./img/marico1.png" alt="" class="intro-img" data-aos="zoom-in" data-aos-duration="2300">
+            <img src="./img/marico2.png" alt="" class="intro-img" data-aos="zoom-in" data-aos-duration="2300">
+            <img src="./img/marico3.png" alt="" class="intro-img" data-aos="zoom-in" data-aos-duration="2300">
+        </div>
+        <div class="content-block-intro">
+            <img src="./img/landie1.png" alt="" class="intro-img"  data-aos="zoom-in" data-aos-duration="2300">
+            <img src="./img/landie2.png" alt="" class="intro-img"  data-aos="zoom-in" data-aos-duration="2300">
+            <img src="./img/landie3.png" alt="" class="intro-img"  data-aos="zoom-in" data-aos-duration="2300">
+        </div>
+        <div class="content-block-intro">
+            <img src="./img/ravel1.png" alt="" class="intro-img"  data-aos="zoom-in" data-aos-duration="2300">
+            <img src="./img/ravel2.png" alt="" class="intro-img"  data-aos="zoom-in" data-aos-duration="2300">
+            <img src="./img/ravel3.png" alt="" class="intro-img"  data-aos="zoom-in" data-aos-duration="2300">
+        </div>
+    </div>
+    <footer class="footer" id="contact">
+        <nav class="footer-nav">
+            <a href="https://t.me/snanelx" class="nav-link">Telegram</a>
+            <a href="https://kwork.ru/user/skipli" target="_blank" class="nav-link">Kwork</a>
+        </nav>
+        <nav class="footer-nav">
+            <a href="https://www.weblancer.net/users/snanlx/" target="_blank" class="nav-link">Weblancer</a>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+        </nav>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
